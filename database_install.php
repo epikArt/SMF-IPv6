@@ -12,6 +12,8 @@ elseif (!defined('SMF'))
 
 global $db_prefix, $modSettings, $func, $smcFunc;
 
+db_extend('packages');
+
 // Fields to add
 $new_fields = array(
 	'is_ipv6' => array('name'=> 'is_ipv6', 'type'=>'SMALLINT', 'unsigned' => true, 'default' => 0),
